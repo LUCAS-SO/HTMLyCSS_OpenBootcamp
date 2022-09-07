@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Interés en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+
+    <section>
+        <div class="container my-4">
+            <div class="bg-light p-5 rounder-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold"> ¡Bienvenid@s a mi primer Jumbotron!</h1>
+                    <p class="col-md-8 fs-4">A continuación voy a estar poniendo en practica este Jumbotron realizado con Boostrap, y l@s invito a presionar el siguiente button...</p>
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal-ejemplo">Button</button>
+                    <div class="modal fade" data-bs-backdrop="static" id="modal-ejemplo">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <h3 class="modal-header">Esto es un Modal</h3>
+                                <p class="modal-body">¡Sí! Como pueden observar estoy poniendo en practica un modal.</p>
+                                <div class="modal-footer">
+                                    <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Sí, bueno... ¿Quién tiene hambre?</button>
+                                    <button class="btn btn-success">¡Bien hecho!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container my-4">
+            <form>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre y apellido/s">
+                  <div id="nombre" class="form-text">Ingrese su nombre completo.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="telefono" class="form-label">Teléfono</label>
+                  <input type="number" class="form-control" id="telefono" placeholder="Ejm +xx (xxxx)-xxxxxxxx">
+                </div>
+                <div class="mb-3">
+                    <label for="texto" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="texto" rows="3"></textarea>
+                    <div id="texto" class="form-text">Ingrese en el mensaje lo que desee comunicarme y me contactare lo antes posible.</div>
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </section>
+
+    <section>
+        <div class="container my-4 py-4">
+            <div class="card" style="width: 25rem;">
+                <h3 class="card-title p-4 display-5">Lucas Soria</h3>
+                <div class="card-boy">
+                    <p class="card-text px-4 pb-4">Poniendo a prueba la tarjeta o card. Espero estes disfrutando de lo que ves, cualquier consulta o duda te dejo mi mail.</p>
+                </div>
+                <div class="card-footer p-4">
+                    <h5>soria.lucas@hotmail.com</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</html>

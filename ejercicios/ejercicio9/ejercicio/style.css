@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.btn-modern{
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.btn-modern:hover{
+    animation: move 0.4s forwards ease-in-out;
+    background-color: darkslateblue;
+    color: whitesmoke;
+    box-shadow: 0 0 20px slategrey;
+}
+
+@keyframes move{
+    0% {
+        transform: translateY(0px)
+    }
+    100% {
+        transform: translateY(-5px)
+    }
+}

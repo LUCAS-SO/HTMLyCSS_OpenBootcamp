@@ -1,0 +1,40 @@
+.padre{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.hijo{
+    width: 50%;
+    height: 50%;
+    background-color: bisque;
+    animation: translation 3s ease-in-out infinite forwards alternate;
+}
+
+.padre:hover .hijo{
+    animation-play-state: paused;
+}
+
+@keyframes translation{
+    0% {
+        background-color: bisque;
+        transform: translateX(0%);
+    }
+    25% {
+        background-color: burlywood;
+        transform: translateX(100%);
+    }
+    50% {
+        background-color: coral;
+        transform: translateX(100%) translateY(100%);
+    }
+    75% {
+        background-color: orange;
+        transform: translateX(0%) translateY(100%);
+    }
+    100%{
+        background-color: orangered;
+        transform: translateX(0%);
+    }
+}
+
